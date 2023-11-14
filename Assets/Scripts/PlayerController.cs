@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // m_speed controls the speed of the character
-    [SerializeField] private float m_speed = 5f;
+    [SerializeField] private float m_speed = 3f;
     
     // m_jumpForce controls the force of the jump
-    [SerializeField] private float m_jumpForce = 10f;
+    [SerializeField] private float m_jumpForce = 4f;
     
     // m_gravity controls the gravity of the character
     [SerializeField] private float m_gravity = 1f;
@@ -16,15 +16,16 @@ public class PlayerController : MonoBehaviour
     // m_player is the player object
     [SerializeField] private GameObject m_player;
     
-    // m_playerRigidbody is the player's rigidbody
-    private Rigidbody m_playerRigidbody;
+    // m_playerRigidbody is the player's rigidbody 2d
+    private Rigidbody2D m_playerRigidbody2D;
     
     
     // Start is called before the first frame update
     void Start()
     {
         //get player game object
-        m_player = GameObject.Find("Player");
+        m_player = GameObject.Find("NPC3_0");
+        m_playerRigidbody2D = m_player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -41,8 +42,8 @@ public class PlayerController : MonoBehaviour
         
         
         // Debug the inputs
-        Debug.Log("Horizontal Input: " + horizontalInput);
-        Debug.Log("Jump Input: " + jumpInput);
+        //Debug.Log("Horizontal Input: " + horizontalInput);
+        
         
         // Create a new Vector3 to store the movement
         Vector3 movement = new Vector3(horizontalInput, 0, 0);
@@ -53,7 +54,18 @@ public class PlayerController : MonoBehaviour
         // If the player presses the jump button, jump
         if (jumpInput)
         {
-            m_playerRigidbody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+            //m_playerRigidbody2D.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
+            m_playerRigidbody2D.velocity = Vector3.up * m_jumpForce;
+            Debug.Log("Jump Input: " + jumpInput);
+        }
+    }
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        // If the player collides with the ground, set the player's rigidbody to the ground
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            m_playerRigidbody2D = collision.gameObject.GetComponent<Rigidbody2D>();
         }
     }
 }
