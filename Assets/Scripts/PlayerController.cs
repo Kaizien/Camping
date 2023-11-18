@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    //  m_animator is the animator component of the player
+    [SerializeField] private Animator m_animator;
+    
     // m_speed controls the speed of the character
     [SerializeField] private float m_speed = 3f;
     
@@ -20,12 +24,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D m_playerRigidbody2D;
     
     
+    
     // Start is called before the first frame update
     void Start()
     {
         //get player game object
-        m_player = GameObject.Find("NPC3_0");
+        m_player = GameObject.Find("Player");
         m_playerRigidbody2D = m_player.GetComponent<Rigidbody2D>();
+        m_animator = m_player.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -47,6 +53,8 @@ public class PlayerController : MonoBehaviour
         
         // Create a new Vector3 to store the movement
         Vector3 movement = new Vector3(horizontalInput, 0, 0);
+        
+       // m_animator.SetFloat("Speed", Mathf.Abs(movement));
         
         // Move the player based on input
         m_player.transform.position += movement * m_speed * Time.deltaTime;
