@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:ProgressBar value="4" title="my-progress" high-value="5" style="-unity-font-style: bold; border-right-width: 0;" />
+</ui:UXML>

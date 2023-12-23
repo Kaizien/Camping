@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/counter.uss?fileID=7433441132597879392&amp;guid=ecbfce56f9fe50e44a9170bf078dfbfa&amp;type=3#counter" />
+    <ui:ProgressBar value="0" title="Trash Collected" high-value="5" focusable="false" name="TrashCollected" class="unityTrashCounter" style="-unity-font-style: bold; font-size: 18px; -unity-text-align: upper-center; align-self: flex-end; width: 283px; -unity-background-image-tint-color: rgb(77, 161, 71); justify-content: center; align-items: auto;" />
+</ui:UXML>

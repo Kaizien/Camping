@@ -39,11 +39,15 @@ public class ItemInteraction : MonoBehaviour
         {
             Debug.Log("Collision with player detected");
             m_playerController.GetComponent<PlayerController>().AddItem(m_item);
-            m_player.GetComponentInChildren<Inventory>().AddItem(m_item);
-            //set item to be a child of the inventory
-            m_item.transform.SetParent(m_player.GetComponentInChildren<Inventory>().transform);
+            //m_player.GetComponentInChildren<Inventory>().AddItem(m_item);
             //set item to be inactive
-            m_item.SetActive(false);
+           // m_item.SetActive(false);
+            //set item to be a child of the inventory
+           // m_item.transform.SetParent(m_player.GetComponentInChildren<Inventory>().transform);
+           
+           //destroy the item after updating counts.
+           Destroy(m_item);
+            
         }
     }
 }
