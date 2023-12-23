@@ -1,0 +1,688 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07c9b2c97f84356bb2bfac29363e611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StyleTrainerData:
+    rid: 7425230147365896192
+  m_DefaultStyleData:
+    rid: 7425230147365896193
+  m_DefaultStyleVersion: 2023090802
+  m_DefaultStyles:
+  - rid: 7425230147365896194
+  m_AssetPath: 
+  m_PreviousProjectIDs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 7425230147365896192
+      type: {class: StyleTrainerData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 4fe8eea9-ba65-4269-aabd-658e2062095d
+        m_State: 1
+        m_Disposing: 0
+        m_Styles:
+        - rid: 7425230147365896195
+        m_Version: 202231001
+    - rid: 7425230147365896193
+      type: {class: StyleTrainerData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 11000000-0000-0000-0000-000000000011
+        m_State: 1
+        m_Disposing: 0
+        m_Styles:
+        - rid: 7425230159298691871
+        m_Version: 202231001
+    - rid: 7425230147365896194
+      type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 00000000-0000-0000-0000-000000000000
+        m_State: 1
+        m_Disposing: 0
+        m_IsFallback: 1
+        m_Thumbnail:
+          rid: -2
+        m_Visible: 0
+        selectedCheckPointGUID: 00000000-0000-0000-0000-000000000000
+        m_FavoriteCheckPointGUID: active
+        parentID: 00000000-0000-0000-0000-000000000000
+        m_ProjectID: 00000000-0000-0000-0000-000000000000
+        m_TrainingSteps: 2000
+        m_CheckPoints:
+        - m_Guid: 00000000-0000-0000-0000-000000000000
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: 00000000-0000-0000-0000-000000000000
+          m_Name: Default
+          m_Description: Default style.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 
+            m_State: 0
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: 
+          m_ValidationImagesData: []
+          m_TrainingSteps: 0
+        m_SampleOutputPrompts: []
+        m_TrainingSetData: []
+        m_Name: Default
+        m_Description: Default style.
+    - rid: 7425230147365896195
+      type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 72b6595f-ed92-4d5c-b2e2-673f895a0c25
+        m_State: 1
+        m_Disposing: 0
+        m_IsFallback: 0
+        m_Thumbnail:
+          rid: 7425230147365896197
+        m_Visible: 1
+        selectedCheckPointGUID: 856cb4ad-e52e-4c5d-97cd-a3a40d7edc06
+        m_FavoriteCheckPointGUID: 00000000-0000-0000-0000-000000000000
+        parentID: 00000000-0000-0000-0000-000000000000
+        m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+        m_TrainingSteps: 2000
+        m_CheckPoints:
+        - m_Guid: 510d3355-4532-4f52-b88f-941d633eb44b
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: e661b973-e9ec-4830-837c-4766f0a4c9d5
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: e661b973-e9ec-4830-837c-4766f0a4c9d5
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 31267802-689c-4a53-9a24-e156b891212f
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 31267802-689c-4a53-9a24-e156b891212f
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: f1efdc20-b764-4336-9f4e-30a80e768e68
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: f1efdc20-b764-4336-9f4e-30a80e768e68
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 200
+        - m_Guid: 2ae4f576-896a-4c0f-b652-dfd9feaad247
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 138223a0-c46e-4b61-b1c9-a8e609248339
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 138223a0-c46e-4b61-b1c9-a8e609248339
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 8e0f27b6-ba21-479d-ad29-79a92c90f4da
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 8e0f27b6-ba21-479d-ad29-79a92c90f4da
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: 63d15320-bee0-40ba-a707-0e1cba4f67c0
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 63d15320-bee0-40ba-a707-0e1cba4f67c0
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 400
+        - m_Guid: c3033e65-4003-470b-a018-f2f1dd1b2d1c
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: b2a290cb-9555-4bc3-b9db-68499bf33d28
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: b2a290cb-9555-4bc3-b9db-68499bf33d28
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 846b2460-c400-4984-998d-e0ad776972c6
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 846b2460-c400-4984-998d-e0ad776972c6
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: 25285802-8095-436d-9566-1e8b28cd4026
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 25285802-8095-436d-9566-1e8b28cd4026
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 600
+        - m_Guid: 36790bb7-1845-4c80-8575-52893a69c1c6
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 52a2f366-6023-497e-b0d5-141ed9cf647d
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 52a2f366-6023-497e-b0d5-141ed9cf647d
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 6a890126-967a-4c22-8965-26a7c651d0b6
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 6a890126-967a-4c22-8965-26a7c651d0b6
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: 7c1a78b3-99a1-445a-ab5c-2552ddc246e6
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 7c1a78b3-99a1-445a-ab5c-2552ddc246e6
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 800
+        - m_Guid: d803415b-911d-4bb6-8e6b-066e2595ecd5
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 840b639c-baee-4d46-be52-c479a44a4961
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 840b639c-baee-4d46-be52-c479a44a4961
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: bc25c2e3-2daf-465b-a042-721560b9d183
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: bc25c2e3-2daf-465b-a042-721560b9d183
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: bda1a8b8-266d-414f-8135-1cfad02b64a6
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: bda1a8b8-266d-414f-8135-1cfad02b64a6
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 1000
+        - m_Guid: 1111df9b-e302-4af6-bece-7d3b4a7dba0a
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: b5221774-dfd9-46b8-b085-4872eafb1f5a
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: b5221774-dfd9-46b8-b085-4872eafb1f5a
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 8cf48c4f-1f34-4c0e-b8bf-dd2ecd4ee962
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 8cf48c4f-1f34-4c0e-b8bf-dd2ecd4ee962
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: cedaa12a-bd95-4d93-992a-962880c6c438
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: cedaa12a-bd95-4d93-992a-962880c6c438
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 1200
+        - m_Guid: 6b550057-d887-43da-b891-7f198fca4c02
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 423e28e8-15af-4c82-892c-ba8f9dddb3ae
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 423e28e8-15af-4c82-892c-ba8f9dddb3ae
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 83311afe-0f8f-4343-8a73-5dce896d5244
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 83311afe-0f8f-4343-8a73-5dce896d5244
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: a8fbea18-6aad-4abf-85fe-b5ac78d6a152
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: a8fbea18-6aad-4abf-85fe-b5ac78d6a152
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 1400
+        - m_Guid: 5dcf7467-295a-45b7-b7b3-8bd8e392ff39
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 4357bbfe-d65e-401c-b3e3-da0da50ad96f
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 4357bbfe-d65e-401c-b3e3-da0da50ad96f
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 025974e7-98ab-4eca-afb4-f7a5ad81057c
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 025974e7-98ab-4eca-afb4-f7a5ad81057c
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: 590c5e04-e67b-41c6-af92-1f08223c7098
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 590c5e04-e67b-41c6-af92-1f08223c7098
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 1600
+        - m_Guid: d9e1b613-b045-4038-8f57-7075d05ad016
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 119f88f1-15f9-4918-b451-bb2f97763ed5
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 119f88f1-15f9-4918-b451-bb2f97763ed5
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: 14bf1796-95de-4fb2-9244-3dfff67a72ac
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 14bf1796-95de-4fb2-9244-3dfff67a72ac
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: c7333787-09c4-4d57-8970-847bdee4ae05
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: c7333787-09c4-4d57-8970-847bdee4ae05
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 1800
+        - m_Guid: 856cb4ad-e52e-4c5d-97cd-a3a40d7edc06
+          m_State: 5
+          m_Disposing: 0
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_Name: 8-bit camping
+          m_Description: Base forest level assets used in 8-bit platformer game about
+            camping.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+            m_State: 5
+            m_Disposing: 1
+            m_TrainingSet: []
+            m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+          m_ValidationImagesData:
+          - m_Guid: 57ec6896-26e7-4c58-8280-0360cbfaa73a
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 57ec6896-26e7-4c58-8280-0360cbfaa73a
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a shovel that could be found at a
+              campsite. make it fit the style of a game about camping
+          - m_Guid: e2a7015b-f7c6-4793-bec3-c45eab13908a
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: e2a7015b-f7c6-4793-bec3-c45eab13908a
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: Create a 8-bit sprite for a tent that could be in a 2D platformer
+              game
+          - m_Guid: 171911ba-7196-4528-95f1-5b2758754401
+            m_State: 5
+            m_Disposing: 1
+            m_ImageArtifact:
+              m_Guid: 171911ba-7196-4528-95f1-5b2758754401
+              m_State: 1
+              m_Disposing: 1
+            m_Prompt: 'Create an 8-bit sprite for a black garbage bag that could
+              fit the style of a 2d platformer about a camping game. '
+          m_TrainingSteps: 2000
+        m_SampleOutputPrompts:
+        - Create a 8-bit sprite for a shovel that could be found at a campsite. make
+          it fit the style of a game about camping
+        - Create a 8-bit sprite for a tent that could be in a 2D platformer game
+        - 'Create an 8-bit sprite for a black garbage bag that could fit the style
+          of a 2d platformer about a camping game. '
+        m_TrainingSetData:
+        - m_Guid: e0c129b6-095c-46f4-9540-ff9abb33673b
+          m_State: 1
+          m_Disposing: 0
+          m_TrainingSet:
+          - m_Guid: 27be67a9-6ecb-45a8-97ea-b2cc3c8f99ed
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 7425230147365896198
+          - m_Guid: e0898b59-eeb9-4320-b62e-5343f3238a4c
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 7425230147365896199
+          - m_Guid: 7071757c-b56a-4f37-8230-7d57e21eaf2d
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 7425230147365896200
+          - m_Guid: b5a8594d-4492-4167-b52a-9f521eec952a
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 7425230147365896201
+          - m_Guid: eddf1f95-8c5f-44ce-a9a0-842a9c1dcd27
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 7425230147365896202
+          m_ProjectID: 4fe8eea9-ba65-4269-aabd-658e2062095d
+        m_Name: 8-bit camping
+        m_Description: Base forest level assets used in 8-bit platformer game about
+          camping.
+    - rid: 7425230147365896197
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 00000000-0000-0000-0000-000000000000
+        m_State: 3
+        m_Disposing: 1
+    - rid: 7425230147365896198
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 27be67a9-6ecb-45a8-97ea-b2cc3c8f99ed
+        m_State: 1
+        m_Disposing: 1
+    - rid: 7425230147365896199
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: e0898b59-eeb9-4320-b62e-5343f3238a4c
+        m_State: 1
+        m_Disposing: 1
+    - rid: 7425230147365896200
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 7071757c-b56a-4f37-8230-7d57e21eaf2d
+        m_State: 1
+        m_Disposing: 1
+    - rid: 7425230147365896201
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: b5a8594d-4492-4167-b52a-9f521eec952a
+        m_State: 1
+        m_Disposing: 1
+    - rid: 7425230147365896202
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: eddf1f95-8c5f-44ce-a9a0-842a9c1dcd27
+        m_State: 1
+        m_Disposing: 1
+    - rid: 7425230159298691871
+      type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 5cc104e0-423a-473e-8034-b9d346cb2357
+        m_State: 1
+        m_Disposing: 0
+        m_IsFallback: 0
+        m_Thumbnail:
+          rid: -2
+        m_Visible: 1
+        selectedCheckPointGUID: 00000000-0000-0000-0000-000000000000
+        m_FavoriteCheckPointGUID: active
+        parentID: 00000000-0000-0000-0000-000000000000
+        m_ProjectID: 11000000-0000-0000-0000-000000000011
+        m_TrainingSteps: 2000
+        m_CheckPoints:
+        - m_Guid: 03fa404b-39fc-4979-9272-deb5d8c4b24c
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: 11000000-0000-0000-0000-000000000011
+          m_Name: Happy Harvest [Orion V4 2000]
+          m_Description: 8 Nov 2023
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 3e758588-960f-44f5-865a-d5eaa1b1dec4
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: 11000000-0000-0000-0000-000000000011
+          m_ValidationImagesData:
+          - m_Guid: 96b39a19-2d3e-4bc5-aa3c-38667ed6eba5
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 96b39a19-2d3e-4bc5-aa3c-38667ed6eba5
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A chicken
+          - m_Guid: 05de072c-ebbc-43d7-886b-7ac4f9cbd079
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 05de072c-ebbc-43d7-886b-7ac4f9cbd079
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A cow
+          - m_Guid: 2dbfc212-f87b-45f9-a05a-06368e190ca1
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 2dbfc212-f87b-45f9-a05a-06368e190ca1
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A dog
+          - m_Guid: e0139464-a868-402a-95b8-b4c26685a97b
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: e0139464-a868-402a-95b8-b4c26685a97b
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A farmer
+          - m_Guid: 4421bead-a3ff-4c09-9514-61e127eb470e
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 4421bead-a3ff-4c09-9514-61e127eb470e
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A pine tree
+          m_TrainingSteps: 1200
+        m_SampleOutputPrompts:
+        - A chicken
+        - A cow
+        - A dog
+        - A farmer
+        - A pine tree
+        m_TrainingSetData:
+        - m_Guid: 3e758588-960f-44f5-865a-d5eaa1b1dec4
+          m_State: 5
+          m_Disposing: 0
+          m_TrainingSet: []
+          m_ProjectID: 11000000-0000-0000-0000-000000000011
+        m_Name: Default
+        m_Description: Default Style

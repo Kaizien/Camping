@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    // m_inventory is the player's inventory
+    [SerializeField] private Inventory m_inventory;
+    
     //  m_animator is the animator component of the player
     [SerializeField] private Animator m_animator;
     
@@ -75,5 +78,19 @@ public class PlayerController : MonoBehaviour
         {
             m_playerRigidbody2D = collision.gameObject.GetComponent<Rigidbody2D>();
         }
+    }
+    
+    /// <summary>
+    /// Add item to player's inventory when player collides with item
+    /// </summary>
+    /// <param name="itemType"></param>
+    /// <param name="itemValue"></param>
+    /// <param name="itemName"></param>
+    /// <param name="itemDescription"></param>
+    /// <param name="itemSprite"></param>
+    public void AddItem(GameObject item)
+    {
+        // Add the item to the player's inventory
+        m_inventory.AddItem(item);
     }
 }
