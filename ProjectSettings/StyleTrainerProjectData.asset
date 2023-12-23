@@ -42,7 +42,7 @@ MonoBehaviour:
         m_State: 1
         m_Disposing: 0
         m_Styles:
-        - rid: 7425230159298691871
+        - rid: 7425230159298691955
         m_Version: 202231001
     - rid: 7425230147365896194
       type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
@@ -601,7 +601,7 @@ MonoBehaviour:
         m_Guid: eddf1f95-8c5f-44ce-a9a0-842a9c1dcd27
         m_State: 1
         m_Disposing: 1
-    - rid: 7425230159298691871
+    - rid: 7425230159298691955
       type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
       data:
         m_Guid: 5cc104e0-423a-473e-8034-b9d346cb2357

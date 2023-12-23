@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -10,6 +11,12 @@ public class Inventory : MonoBehaviour
     
     // m_player is the player object
     [SerializeField] private GameObject m_player;
+    
+    // PLAYER'S TRASH COUNT
+    [SerializeField] private int m_trashCount = 0;
+    
+    
+   
     
     // Start is called before the first frame update
     void Start()
@@ -34,5 +41,10 @@ public class Inventory : MonoBehaviour
     public void AddItem(GameObject item)
     {
         m_inventory.Add(item);
+        if(item.GetComponent<ItemDetails>().GetItemType() == "trash")
+        {
+            m_trashCount++;
+            Debug.Log("Trash count is now " + m_trashCount);
+        }
     }
 }

@@ -48,7 +48,7 @@ public class ItemDetails : MonoBehaviour
     /// Get the item's type and return it
     /// </summary>
     /// <returns></returns>
-    private string GetItemType()
+    public string GetItemType()
     {
         Debug.Log("This item's type is " + m_itemType);
         return (m_itemType);
