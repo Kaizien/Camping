@@ -57,6 +57,8 @@ public class Inventory : MonoBehaviour
             UpdateTrashCount();
             
             
+            
+            
         }
     }
 
@@ -65,6 +67,14 @@ public class Inventory : MonoBehaviour
         //update the trash count progress bar with the amount of trash collected.
         m_trashCountProgressBar.value = m_trashCount;
 
+    }
+    
+    //update player score
+    public void UpdateScore(int score)
+    {
+        m_trashCount += score;
+        Debug.Log("Trash count is now " + m_trashCount);
+        UpdateTrashCount();
     }
     
 }
