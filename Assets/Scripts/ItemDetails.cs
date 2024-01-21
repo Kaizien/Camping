@@ -54,19 +54,19 @@ public class ItemDetails : MonoBehaviour
         return (m_itemType);
     }
     
-    private string GetItemName()
+    public string GetItemName()
     {
         Debug.Log("This item's name is " + m_itemName);
         return (m_itemName);
     }
     
-    private string GetItemDescription()
+    public string GetItemDescription()
     {
         Debug.Log("This item's description is " + m_itemDescription);
         return (m_itemDescription);
     }
 
-    private int GetItemValue()
+    public int GetItemValue()
     {
         Debug.Log("This item's value is " + m_itemValue);
         return (m_itemValue);

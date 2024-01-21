@@ -32,8 +32,17 @@ public class PlayerController : MonoBehaviour
     // m_playerRigidbody is the player's rigidbody 2d
     private Rigidbody2D m_playerRigidbody2D;
     
-    
+    private int m_jumpCount = 0;
     private SpriteRenderer m_spriteRenderer;
+    
+    //a list of game objects to be activated when each is collected
+    [SerializeField] private List<GameObject> m_gameObjectsToActivate;
+    
+    //reference to the score text:
+    [SerializeField] private GameObject m_scoreText;
+    
+    //track trash count
+    private int trashCounter = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -64,6 +73,7 @@ public class PlayerController : MonoBehaviour
         {
             // Set the player's gravity to 0
             m_playerRigidbody2D.gravityScale = 0;
+            m_jumpCount = 0;
         }
         else
         {
@@ -72,7 +82,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    public void AddScore(int score)
+    {
+        m_score += score;
+        m_scoreText.GetComponent<UnityEngine.UI.Text>().text = "Score: " + m_score;
+        Debug.Log("Player score is " + m_score);
+    }
     private void PlayerMovement()
     {
         // Get the horizontal and jump inputs
@@ -98,17 +113,23 @@ public class PlayerController : MonoBehaviour
         }
 
         // If the player presses the jump button, jump if currently m_OnGround == true
-        if (jumpInput && m_OnGround)
+        if ((jumpInput && m_OnGround) || (jumpInput && m_jumpCount < 1))
         {
-            // Set the player's velocity to the jump force
-            m_playerRigidbody2D.velocity = new Vector2(m_playerRigidbody2D.velocity.x, m_jumpForce);
+            // Set the player's velocity to the jump force if they are able to jump/double jump
+            if(m_jumpCount  < 1)
+            {
+                m_playerRigidbody2D.velocity = new Vector2(m_playerRigidbody2D.velocity.x, m_jumpForce);
+                m_jumpCount++;
+
+            }
+            
         }
     }
 
 
 
     
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision2D collision)
     {
         // If the player collides with the ground, set the player's rigidbody to the ground
         if (collision.gameObject.CompareTag("Ground"))
@@ -130,6 +151,48 @@ public class PlayerController : MonoBehaviour
         // Add the item to the player's inventory
         Debug.Log("Player collided with item. Adding item to inventory.");
         m_inventory.AddItem(item);
+        if(item.tag == "Collectible")
+        {
+                
+            //check the item's Item Details Component to get information about it. Use this information to update the player's inventory.
+            ItemDetails itemDetails = item.GetComponent<ItemDetails>();
+            //update player score
+            AddScore(itemDetails.GetItemValue());
+            //update ui
+            string itemType = itemDetails.GetItemType();
+            string itemName = itemDetails.GetItemName();
+            string itemDescription = itemDetails.GetItemDescription();
+            if (itemType == "Trash")
+            {
+                m_gameObjectsToActivate[trashCounter].SetActive(true);
+                trashCounter++;
+            }
+            
+            //case statement for activating game objects
+            switch (itemName)
+            {
+                //case Flashlight:
+                case "Flashlight":
+                    m_gameObjectsToActivate[5].SetActive(true);
+                    break;
+                case "Water":
+                    m_gameObjectsToActivate[6].SetActive(true);
+                    break;
+                case "Whistle":
+                    m_gameObjectsToActivate[7].SetActive(true);
+                    break;
+                case "Matches":
+                    m_gameObjectsToActivate[8].SetActive(true);
+                    break;
+                case "MedicalKit":
+                    m_gameObjectsToActivate[9].SetActive(true);
+                    break;
+                
+            }
+                
+                
+                
+        }
         
     }
 }

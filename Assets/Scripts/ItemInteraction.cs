@@ -17,6 +17,10 @@ public class ItemInteraction : MonoBehaviour
     // m_item is this item object
     [SerializeField] public GameObject m_item;
     
+
+
+    private int trashCounter = 0; //keep track of trash collected
+    
     // Start is called before the first frame update
     // Get the player and the player's controller + the player's RigidBody2D Component.
     void Start()
@@ -39,6 +43,7 @@ public class ItemInteraction : MonoBehaviour
         {
             Debug.Log("Collision with player detected");
             m_playerController.GetComponent<PlayerController>().AddItem(m_item);
+            
             //m_player.GetComponentInChildren<Inventory>().AddItem(m_item);
             //set item to be inactive
            // m_item.SetActive(false);
