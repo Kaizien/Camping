@@ -13,11 +13,13 @@ public class StartMenuInteractions : MonoBehaviour
     [SerializeField] private GameObject m_LoadingScreenText;
 
     [SerializeField] private GameObject m_LoadingScreenCounter;
+
+    private bool m_startClicked; //prevent multiple clicks of the start button
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_startClicked = false;
     }
 
     // Update is called once per frame
@@ -29,15 +31,49 @@ public class StartMenuInteractions : MonoBehaviour
     /// <summary>
     /// When the button is clicked, start the game. pause for 5 seconds between displaying the loading screen and starting the game.
     /// </summary>
+    public void StartGameButton()
+    {
+        if (m_startClicked == false)
+        {
+            Debug.Log("Starting game");
+            m_startClicked = true;
+            m_LoadingScreenCounter.SetActive(true);
+            StartCoroutine(PauseGame(3f));
+        }
+    }
+    
+    /// <summary>
+    /// When the button is clicked, start the game. pause for 5 seconds between displaying the loading screen and starting the game.
+    /// </summary>
+    public void QuitGameButton()
+    {
+        Debug.Log("Quitting game");
+        Application.Quit();
+        
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    public void TransitionScene()
+    {
+        m_startMenu.SetActive(false);
+        m_LoadingScreenText.SetActive(true);
+    }
+    
+    /// <summary>
+    /// When the button is clicked, start the game. pause for 5 seconds between displaying the loading screen and starting the game.
+    /// </summary>
     public void StartGame()
     {
         Debug.Log("Starting game");
-        m_startMenu.SetActive(false);
-        m_LoadingScreenText.SetActive(true);
+
         m_LoadingScreenCounter.SetActive(true);
-        StartCoroutine(PauseGame(10f));
+        StartCoroutine(PauseGame(3f));
 
     }
+    
+    
     
     public void QuitGame()
     {
