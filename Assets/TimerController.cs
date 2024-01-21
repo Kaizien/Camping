@@ -5,11 +5,13 @@ using UnityEngine;
 public class TimerController : MonoBehaviour
 {
     [SerializeField] private GameObject m_timerText;
-    
+
+    public int secondsCount;
     
     // Start is called before the first frame update
     void Start()
     {
+        secondsCount = 0;
         StartCoroutine(UpdateTimer());
     }
 
@@ -22,7 +24,7 @@ public class TimerController : MonoBehaviour
     
     IEnumerator UpdateTimer()
     {
-        int secondsCount = 0;
+        
         while (true) // Infinite loop, you can add a condition to break it if needed
         {
             secondsCount++;
