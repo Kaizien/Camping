@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
     {
         m_trashCount = 0;
        //init trassh count progress bar
-       m_trashCountProgressBar = m_uiDocument.rootVisualElement.Q<ProgressBar>("TrashCollected");
+       //m_trashCountProgressBar = m_uiDocument.rootVisualElement.Q<ProgressBar>("TrashCollected");
        
        m_trashCountProgressBar.value = 0;
     }

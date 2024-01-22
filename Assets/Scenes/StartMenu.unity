@@ -478,7 +478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Help Hopper find her equipment and get back to camp!
+  m_Text: 'Help Grace find her equipment and get back to camp!
 
 '
 --- !u!222 &95138632
@@ -658,7 +658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Starting in 5 seconds...
+  m_Text: 
 --- !u!222 &342800656
 CanvasRenderer:
   m_ObjectHideFlags: 0
